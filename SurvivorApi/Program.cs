@@ -3,7 +3,7 @@ using SurvivorApi.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Veritabanı bağlantısını ekle
+
 builder.Services.AddDbContext<SurvivorDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
